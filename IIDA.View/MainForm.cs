@@ -18,6 +18,8 @@ namespace IIDA.View
         {
             InitializeComponent();
 
+            // this is new verson
+
             // Назначени обработчиков событий компанентам
             //button1.Click += new EventHandler(button1_Click);
 
