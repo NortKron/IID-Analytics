@@ -59,5 +59,14 @@ namespace IIDA.View.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Менеджер проектов.
+        /// </summary>
+        internal static string Label_Tab {
+            get {
+                return ResourceManager.GetString("Label_Tab", resourceCulture);
+            }
+        }
     }
 }
