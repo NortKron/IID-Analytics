@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>IIDA.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\IIDA.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -149,8 +149,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IIDA.ico" />
-    <None Include="Resources\TextFile1.txt" />
+    <Content Include="Resources\IIDA.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IIDA.Model\IIDA.Model.csproj">
