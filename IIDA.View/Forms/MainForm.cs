@@ -31,7 +31,7 @@ namespace IIDA.View
 
         private void MainMenu_ProjectManager_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
+            tabControl_Main.SelectedIndex = 0;
         }
 
         private void MainMenu_Calcs_Click(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace IIDA.View
         private void MainMenu_About_Click(object sender, EventArgs e)
         {
             Form_About newForm = new Form_About();
-            OpenTabWindow(newForm);
+            newForm.ShowDialog();
         }
 
         private void MainMenu_Table_Click(object sender, EventArgs e)
@@ -66,11 +66,11 @@ namespace IIDA.View
 
         private void OpenTabWindow(Form newForm)
         {   
-            foreach (TabPage tabPage in tabControl1.TabPages)
+            foreach (TabPage tabPage in tabControl_Main.TabPages)
             {
                 if (tabPage.Text == newForm.Text)
                 {
-                    tabControl1.SelectedTab = tabPage;
+                    tabControl_Main.SelectedTab = tabPage;
                     return;
                 }
             }
@@ -85,8 +85,18 @@ namespace IIDA.View
             newTabPage.Controls.Add(newForm);
             newTabPage.Text = newForm.Text;
 
-            tabControl1.TabPages.Add(newTabPage);
-            tabControl1.SelectedIndex = tabControl1.TabPages.Count - 1;
+            tabControl_Main.TabPages.Add(newTabPage);
+            tabControl_Main.SelectedIndex = tabControl_Main.TabPages.Count - 1;
+        }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {   
+            // Сочетание клавиш Ctrl + W закрывает активную вкладку TabControl
+            if (e.Control && e.KeyCode == Keys.W)
+            {
+                if (tabControl_Main.SelectedIndex != 0)
+                    tabControl_Main.TabPages.RemoveAt(tabControl_Main.SelectedIndex);
+            }
         }
     }
 }
