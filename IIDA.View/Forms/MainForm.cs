@@ -64,6 +64,11 @@ namespace IIDA.View
             OpenTabWindow(newForm);
         }
 
+        private void MainMenu_Web_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://vtd-pb.ru/");
+        }
+
         private void OpenTabWindow(Form newForm)
         {   
             foreach (TabPage tabPage in tabControl_Main.TabPages)
