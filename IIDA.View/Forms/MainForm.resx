@@ -152,6 +152,12 @@
   <data name="toolStripStatusLabel1.Text" xml:space="preserve">
     <value>Строка состояния</value>
   </data>
+  <data name="toolStripStatusLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 17</value>
+  </data>
+  <data name="toolStripStatusLabel2.Text" xml:space="preserve">
+    <value>toolStripStatusLabel2</value>
+  </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>204, 19</value>
   </metadata>
@@ -198,22 +204,40 @@
     <value>Файл</value>
   </data>
   <data name="MainMenu_OpenProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="MainMenu_OpenProject.Text" xml:space="preserve">
     <value>Открыть проект</value>
   </data>
   <data name="MainMenu_CreateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="MainMenu_CreateProject.Text" xml:space="preserve">
     <value>Создать проект</value>
   </data>
   <data name="MainMenu_Exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="MainMenu_Exit.Text" xml:space="preserve">
     <value>Выход</value>
+  </data>
+  <data name="MainMenu_View.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 20</value>
+  </data>
+  <data name="MainMenu_View.Text" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="MainMenu_Service.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="MainMenu_Service.Text" xml:space="preserve">
+    <value>Сервис</value>
+  </data>
+  <data name="MainMenu_Settings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 22</value>
+  </data>
+  <data name="MainMenu_Settings.Text" xml:space="preserve">
+    <value>Настройки</value>
   </data>
   <data name="MainMenu_Windows.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 20</value>
@@ -258,19 +282,19 @@
     <value>Справка</value>
   </data>
   <data name="MainMenu_GetHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="MainMenu_GetHelp.Text" xml:space="preserve">
     <value>Вызов справки</value>
   </data>
   <data name="MainMenu_Web.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="MainMenu_Web.Text" xml:space="preserve">
     <value>Вебсайт</value>
   </data>
   <data name="MainMenu_About.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="MainMenu_About.Text" xml:space="preserve">
     <value>О программе</value>
@@ -426,11 +450,14 @@
   <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
+  <data name="groupBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>444, 230</value>
+    <value>454, 230</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 240</value>
+    <value>440, 240</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -451,13 +478,16 @@
     <value>0</value>
   </data>
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="groupBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 230</value>
+    <value>3, 230</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 240</value>
+    <value>445, 240</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -884,7 +914,7 @@
 </value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 600</value>
+    <value>920, 600</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>In-line Inspection Data Analytics</value>
@@ -893,6 +923,12 @@
     <value>toolStripStatusLabel1</value>
   </data>
   <data name="&gt;&gt;toolStripStatusLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel2.Name" xml:space="preserve">
+    <value>toolStripStatusLabel2</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MainMenu_File.Name" xml:space="preserve">
@@ -917,6 +953,24 @@
     <value>MainMenu_Exit</value>
   </data>
   <data name="&gt;&gt;MainMenu_Exit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_View.Name" xml:space="preserve">
+    <value>MainMenu_View</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_View.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Service.Name" xml:space="preserve">
+    <value>MainMenu_Service</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Service.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Settings.Name" xml:space="preserve">
+    <value>MainMenu_Settings</value>
+  </data>
+  <data name="&gt;&gt;MainMenu_Settings.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MainMenu_Windows.Name" xml:space="preserve">

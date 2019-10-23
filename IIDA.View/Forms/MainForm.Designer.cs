@@ -32,12 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MainMenu_File = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu_OpenProject = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu_CreateProject = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu_Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainMenu_View = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainMenu_Service = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainMenu_Settings = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu_Windows = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu_ProjectManager = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu_TableFeatures = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,14 +60,14 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.tabControl_Main = new System.Windows.Forms.TabControl();
             this.tabPage_Main = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -76,7 +80,8 @@
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2});
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
@@ -84,6 +89,11 @@
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            resources.ApplyResources(this.toolStripStatusLabel2, "toolStripStatusLabel2");
             // 
             // contextMenuStrip1
             // 
@@ -94,6 +104,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MainMenu_File,
+            this.MainMenu_View,
+            this.MainMenu_Service,
             this.MainMenu_Windows,
             this.MainMenu_Help});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
@@ -122,6 +134,23 @@
             // 
             this.MainMenu_Exit.Name = "MainMenu_Exit";
             resources.ApplyResources(this.MainMenu_Exit, "MainMenu_Exit");
+            // 
+            // MainMenu_View
+            // 
+            this.MainMenu_View.Name = "MainMenu_View";
+            resources.ApplyResources(this.MainMenu_View, "MainMenu_View");
+            // 
+            // MainMenu_Service
+            // 
+            this.MainMenu_Service.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MainMenu_Settings});
+            this.MainMenu_Service.Name = "MainMenu_Service";
+            resources.ApplyResources(this.MainMenu_Service, "MainMenu_Service");
+            // 
+            // MainMenu_Settings
+            // 
+            this.MainMenu_Settings.Name = "MainMenu_Settings";
+            resources.ApplyResources(this.MainMenu_Settings, "MainMenu_Settings");
             // 
             // MainMenu_Windows
             // 
@@ -248,6 +277,18 @@
             this.tabPage_Main.Name = "tabPage_Main";
             this.tabPage_Main.UseVisualStyleBackColor = true;
             // 
+            // groupBox2
+            // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -285,18 +326,6 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
-            // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -309,6 +338,7 @@
             this.Name = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
+            this.Resize += new System.EventHandler(this.MainForm_ResizeEnd);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -317,6 +347,7 @@
             this.toolStrip1.PerformLayout();
             this.tabControl_Main.ResumeLayout(false);
             this.tabPage_Main.ResumeLayout(false);
+            this.tabPage_Main.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -360,6 +391,10 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ToolStripMenuItem MainMenu_View;
+        private System.Windows.Forms.ToolStripMenuItem MainMenu_Service;
+        private System.Windows.Forms.ToolStripMenuItem MainMenu_Settings;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }
 

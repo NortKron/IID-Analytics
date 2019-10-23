@@ -29,46 +29,21 @@ namespace IIDA.View
 
         public event EventHandler eventClick;
 
-        private void MainMenu_ProjectManager_Click(object sender, EventArgs e)
-        {
-            tabControl_Main.SelectedIndex = 0;
-        }
+        private void MainMenu_ProjectManager_Click(object sender, EventArgs e) => tabControl_Main.SelectedIndex = 0;
 
-        private void MainMenu_Calcs_Click(object sender, EventArgs e)
-        {
-            Form_Calcs newForm = new Form_Calcs();
-            OpenTabWindow(newForm);
-        }
+        private void MainMenu_Calcs_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Calcs());
 
-        private void MainMenu_Map_Click(object sender, EventArgs e)
-        {
-            Form_Map newForm = new Form_Map();
-            OpenTabWindow(newForm);
-        }
+        private void MainMenu_Map_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Map());              
 
-        private void MainMenu_About_Click(object sender, EventArgs e)
-        {
-            Form_About newForm = new Form_About();
-            newForm.ShowDialog();
-        }
+        private void MainMenu_Table_Click(object sender, EventArgs e) => OpenTabWindow(new Form_TableFeatures());
+        
+        private void MainMenu_Report_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Reports());
 
-        private void MainMenu_Table_Click(object sender, EventArgs e)
-        {
-            Form_TableFeatures newForm = new Form_TableFeatures();
-            OpenTabWindow(newForm);
-        }
+        private void MainMenu_About_Click(object sender, EventArgs e) => new Form_About().ShowDialog();        
 
-        private void MainMenu_Report_Click(object sender, EventArgs e)
-        {
-            Form_Reports newForm = new Form_Reports();
-            OpenTabWindow(newForm);
-        }
+        private void MainMenu_Web_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://vtd-pb.ru/");        
 
-        private void MainMenu_Web_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://vtd-pb.ru/");
-        }
-
+        // Открыть новое окно во вкладке TabControl
         private void OpenTabWindow(Form newForm)
         {   
             foreach (TabPage tabPage in tabControl_Main.TabPages)
@@ -102,6 +77,18 @@ namespace IIDA.View
                 if (tabControl_Main.SelectedIndex != 0)
                     tabControl_Main.TabPages.RemoveAt(tabControl_Main.SelectedIndex);
             }
+        }
+
+        private void MainForm_ResizeEnd(object sender, EventArgs e)
+        {
+            groupBox1.Width = tabControl_Main.Width / 2;
+
+            groupBox2.Left = groupBox1.Left + groupBox1.Width + 5;
+            toolStripStatusLabel2.Text = groupBox2.Left.ToString();
+
+            //groupBox2.Width = tabControl_Main.Width / 2 - 20;
+
+            toolStripStatusLabel1.Text = "Ширина = " + tabControl_Main.Width;
         }
     }
 }
