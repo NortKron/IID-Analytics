@@ -41,10 +41,10 @@
             // axMap1
             // 
             this.axMap1.Enabled = true;
-            this.axMap1.Location = new System.Drawing.Point(12, 21);
+            this.axMap1.Location = new System.Drawing.Point(0, 0);
             this.axMap1.Name = "axMap1";
             this.axMap1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMap1.OcxState")));
-            this.axMap1.Size = new System.Drawing.Size(443, 241);
+            this.axMap1.Size = new System.Drawing.Size(500, 300);
             this.axMap1.TabIndex = 0;
             // 
             // dataGridView1
@@ -56,9 +56,9 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(461, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(500, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(435, 241);
+            this.dataGridView1.Size = new System.Drawing.Size(409, 300);
             this.dataGridView1.TabIndex = 2;
             // 
             // Column1
