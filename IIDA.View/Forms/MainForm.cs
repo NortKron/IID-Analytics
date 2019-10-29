@@ -84,14 +84,12 @@ namespace IIDA.View
         }
         private void MainForm_ResizeEnd(object sender, EventArgs e)
         {
-            groupBox1.Width = tabControl_Main.Width / 2;
 
-            groupBox2.Left = groupBox1.Left + groupBox1.Width + 5;
-            toolStripStatusLabel2.Text = groupBox2.Left.ToString();
+        }
 
-            groupBox2.Width = tabControl_Main.Width - groupBox1.Width - 20;
-
-            toolStripStatusLabel1.Text = "Ширина = " + tabControl_Main.Width;
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Resize";
         }
     }
 }
