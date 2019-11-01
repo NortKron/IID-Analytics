@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace IIDA.View
 {
-    public partial class Form_About : Form
+    public partial class Form_Settings : Form
     {
-        public Form_About()
+        public Form_Settings()
         {
             InitializeComponent();
         }
 
-        private void Form_About_KeyDown(object sender, KeyEventArgs e)
+        private void Form_Settings_KeyDown(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
             {
-                case Keys.Escape: 
+                case Keys.Escape:
                     this.Close();
                     break;
 

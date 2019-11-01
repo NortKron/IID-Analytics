@@ -39,7 +39,11 @@ namespace IIDA.View
         
         private void MainMenu_Report_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Reports());
 
-        private void MainMenu_About_Click(object sender, EventArgs e) => new Form_About().ShowDialog();        
+        private void MainMenu_About_Click(object sender, EventArgs e) => new Form_About().ShowDialog();
+
+        private void MainMenu_Settings_Click(object sender, EventArgs e) => new Form_Settings().ShowDialog();
+
+        private void MainMenu_Exit_Click(object sender, EventArgs e) => Application.Exit();
 
         private void MainMenu_Web_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://vtd-pb.ru/");        
 
@@ -81,15 +85,6 @@ namespace IIDA.View
                     tabControl_Main.SelectedIndex = currentTabIndex - 1;
                 }
             }
-        }
-        private void MainForm_ResizeEnd(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MainForm_Resize(object sender, EventArgs e)
-        {
-            toolStripStatusLabel1.Text = "Resize";
-        }
+        }        
     }
 }

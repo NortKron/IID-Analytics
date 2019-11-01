@@ -1,6 +1,6 @@
 ﻿namespace IIDA.View
 {
-    partial class Form_About
+    partial class Form_Settings
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_About));
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(95, 71);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Настройки программы";
             // 
-            // pictureBox_Logo
+            // Form_Settings
             // 
-            resources.ApplyResources(this.pictureBox_Logo, "pictureBox_Logo");
-            this.pictureBox_Logo.Image = global::IIDA.View.Properties.Resources.Image_IIDA;
-            this.pictureBox_Logo.Name = "pictureBox_Logo";
-            this.pictureBox_Logo.TabStop = false;
-            // 
-            // Form_About
-            // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pictureBox_Logo);
+            this.ClientSize = new System.Drawing.Size(792, 473);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Form_About";
+            this.Name = "Form_Settings";
             this.ShowIcon = false;
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_About_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Настройки программы";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_Settings_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -68,6 +60,5 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox_Logo;
     }
 }
