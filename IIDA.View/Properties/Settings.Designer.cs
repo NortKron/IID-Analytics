@@ -22,5 +22,16 @@ namespace IIDA.View.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\"C:\\Users\\sitnik\\Downloads\\IID Anal" +
+            "ytics v02.08.2019 18.20.accdb\"")]
+        public string IIDA_Access_ConnectionString {
+            get {
+                return ((string)(this["IIDA_Access_ConnectionString"]));
+            }
+        }
     }
 }

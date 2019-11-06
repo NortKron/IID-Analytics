@@ -16,5 +16,10 @@ namespace IIDA.View
         {
             InitializeComponent();
         }
+
+        private void Form_TableFeatures_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
