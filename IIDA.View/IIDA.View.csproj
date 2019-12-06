@@ -138,6 +138,9 @@
     <Compile Include="Classes\MessageService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_IIDA_Access_DataSet.cs">
+      <DependentUpon>_IIDA_Access_DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_IIDA_Access_DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

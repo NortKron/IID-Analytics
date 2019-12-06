@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using IIDA.Presenter.Views;
+using IIDA.Presenter;
 
 namespace IIDA.View
 {    
@@ -18,7 +18,7 @@ namespace IIDA.View
         {
             InitializeComponent();
 
-            // this is new verson
+            // TODO: Установить соединение с базой данных
 
         }
 
@@ -33,7 +33,7 @@ namespace IIDA.View
 
         private void MainMenu_Calcs_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Calcs());
 
-        private void MainMenu_Map_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Map());              
+        private void MainMenu_Map_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Map());
 
         private void MainMenu_Table_Click(object sender, EventArgs e) => OpenTabWindow(new Form_TableFeatures());
         
@@ -82,6 +82,8 @@ namespace IIDA.View
                 {
                     int currentTabIndex = tabControl_Main.SelectedIndex;
                     tabControl_Main.TabPages.RemoveAt(currentTabIndex);
+
+                    // При закрытии вкладки переключиться на предыдущую вкладку
                     tabControl_Main.SelectedIndex = currentTabIndex - 1;
                 }
             }
@@ -89,14 +91,18 @@ namespace IIDA.View
 
         private void MainForm_SizeChanged(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "chang";
+            toolStripStatusLabel1.Text = "change";
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the '_IIDA_Access_DataSet.Menedzher_proektov' table. You can move, or remove it, as needed.
             this.menedzher_proektovTableAdapter.Fill(this._IIDA_Access_DataSet.Menedzher_proektov);
+        }
 
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // TODO: Разоравать соединение с базой данных             
         }
     }
 }

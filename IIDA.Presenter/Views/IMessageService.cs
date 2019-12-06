@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IIDA.Presenter.Views
+namespace IIDA.Presenter
 {
     public interface IMessageService
     {

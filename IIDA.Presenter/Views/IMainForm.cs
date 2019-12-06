@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IIDA.Presenter.Views
+namespace IIDA.Presenter
 {
     // Интерфей для работы с Presenter
     public interface IMainForm

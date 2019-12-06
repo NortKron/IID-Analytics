@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 
 using IIDA.Model;
-using IIDA.Presenter.Views;
 
-namespace IIDA.Presenter.Presenters
+namespace IIDA.Presenter
 {
     public class MainPresenter
     {
@@ -29,6 +28,5 @@ namespace IIDA.Presenter.Presenters
 
             _messageService.ShowMessage(str);
         }
-
     }
 }

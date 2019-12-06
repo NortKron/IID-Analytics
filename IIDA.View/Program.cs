@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using IIDA.Presenter.Presenters;
+using IIDA.Presenter;
 
 namespace IIDA.View
 {
@@ -13,12 +13,14 @@ namespace IIDA.View
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
+		[STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MainForm());
+
+            // TODO: Подключиться к БД?
 
             // Init pattern parts
             MainForm form = new MainForm();

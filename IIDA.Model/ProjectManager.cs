@@ -9,6 +9,6 @@ namespace IIDA.Model
 
     public class ProjectManager : IProjectManager
     {
-        // Метода работы с базой данных
+        // Методы работы с базой данных
     }
 }
