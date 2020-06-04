@@ -10,8 +10,9 @@
 
 #pragma warning disable 1591
 
-namespace IIDA.Model 
-{      
+namespace IIDA.Model {
+    
+    
     /// <summary>
     ///Represents a strongly typed in-memory cache of data.
     ///</summary>

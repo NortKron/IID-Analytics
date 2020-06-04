@@ -1,4 +1,4 @@
-п»їusing System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,7 +20,7 @@ namespace IIDA.View
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MainForm());
 
-            // TODO: РџРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ Рє Р‘Р”?
+            // TODO: Подключиться к БД?
 
             // Init pattern parts
             MainForm form = new MainForm();

@@ -96,8 +96,7 @@ namespace IIDA.View
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_IIDA_Access_DataSet.Menedzher_proektov' table. You can move, or remove it, as needed.
-            this.menedzher_proektovTableAdapter.Fill(this._IIDA_Access_DataSet.Menedzher_proektov);
+
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
