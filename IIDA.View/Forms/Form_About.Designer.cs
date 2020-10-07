@@ -42,7 +42,6 @@
             // pictureBox_Logo
             // 
             resources.ApplyResources(this.pictureBox_Logo, "pictureBox_Logo");
-            this.pictureBox_Logo.Image = global::IIDA.View.Properties.Resources.Image_IIDA;
             this.pictureBox_Logo.Name = "pictureBox_Logo";
             this.pictureBox_Logo.TabStop = false;
             // 

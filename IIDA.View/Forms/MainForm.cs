@@ -5,21 +5,32 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using IIDA.Presenter;
 
 namespace IIDA.View
-{    
+{
     public partial class MainForm : Form, IMainForm
     {
         public MainForm()
         {
+            // TODO: Установить соединение с базой данных
+            
             InitializeComponent();
 
-            // TODO: Установить соединение с базой данных
+            foreach (var language in Language.Load())
+            {
+                comboBox2.Items.Add(language);
+            }
+            comboBox2.SelectedIndex = 0;
+        }
 
+        private Language getSelectedLanguage()
+        {
+            return (Language)comboBox2.SelectedItem;
         }
 
         public string SomeText
@@ -96,12 +107,24 @@ namespace IIDA.View
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // TODO: Разоравать соединение с базой данных             
+            // TODO: Разоравать соединение с базой данных
+        }
+
+        private void button_OpenTF_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(getSelectedLanguage().Messages.Text2);
+        }
+
+        private void comboBox2_SelectedValueChanged(object sender, EventArgs e)
+        {
+            var language = getSelectedLanguage();
+            languageBindingSource.DataSource = language;
+            //pictureBox1.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Languages", language.Image));
         }
     }
 }

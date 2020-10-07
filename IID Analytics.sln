@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IIDA.Presenter", "IIDA.Pres
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IIDA.View", "IIDA.View\IIDA.View.csproj", "{8A042DBD-2DE4-4017-AB74-340216E754B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIDA.Tests", "IIDA.Tests\IIDA.Tests.csproj", "{47F6A7EA-71D4-48E5-A207-5428D75FE93B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IIDA.Tests", "IIDA.Tests\IIDA.Tests.csproj", "{47F6A7EA-71D4-48E5-A207-5428D75FE93B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
