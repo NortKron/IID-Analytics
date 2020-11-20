@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+using System.Diagnostics;
 
 using IIDA.Presenter;
 
@@ -21,17 +24,21 @@ namespace IIDA.View
             
             InitializeComponent();
 
+            /*
             foreach (var language in Language.Load())
             {
                 comboBox2.Items.Add(language);
             }
             comboBox2.SelectedIndex = 0;
+            */
         }
 
+        /*
         private Language getSelectedLanguage()
         {
             return (Language)comboBox2.SelectedItem;
         }
+        */
 
         public string SomeText
         {
@@ -53,6 +60,8 @@ namespace IIDA.View
         private void MainMenu_About_Click(object sender, EventArgs e) => new Form_About().ShowDialog();
 
         private void MainMenu_Settings_Click(object sender, EventArgs e) => new Form_Settings().ShowDialog();
+
+        private void MainMenu_ManagerConnection_Click(object sender, EventArgs e) => new Form_ManagerConnections().ShowDialog();
 
         private void MainMenu_Exit_Click(object sender, EventArgs e) => Application.Exit();
 
@@ -117,14 +126,25 @@ namespace IIDA.View
 
         private void button_OpenTF_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(getSelectedLanguage().Messages.Text2);
+            //MessageBox.Show(getSelectedLanguage().Messages.Text2);
         }
 
         private void comboBox2_SelectedValueChanged(object sender, EventArgs e)
         {
-            var language = getSelectedLanguage();
-            languageBindingSource.DataSource = language;
+            //var language = getSelectedLanguage();
+            //languageBindingSource.DataSource = language;
             //pictureBox1.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Languages", language.Image));
         }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Visible = !tableLayoutPanel1.Visible;
+            button1.Text = tableLayoutPanel1.Visible ? "Скрыть нижнюю панель" : "Показать нижнюю панель";
+
+            tableLayoutPanel5.RowStyles[0].Height = tableLayoutPanel1.Visible ? 35 : 100;
+            tableLayoutPanel5.RowStyles[2].Height = tableLayoutPanel1.Visible ? 65 : 0;
+        }
+
+        
     }
 }
