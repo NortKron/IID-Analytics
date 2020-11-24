@@ -59,6 +59,7 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolBtn_Test = new System.Windows.Forms.ToolStripButton();
             this.tabControl_Main = new System.Windows.Forms.TabControl();
             this.tabPage_Main = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -190,6 +191,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -319,6 +321,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -327,7 +330,8 @@
             this.toolStripButton4,
             this.toolStripButton5,
             this.toolStripButton6,
-            this.toolStripComboBox1});
+            this.toolStripComboBox1,
+            this.toolBtn_Test});
             this.toolStrip1.Name = "toolStrip1";
             // 
             // toolStripButton2
@@ -367,14 +371,16 @@
             // 
             // toolStripComboBox1
             // 
-            this.toolStripComboBox1.Items.AddRange(new object[] {
-            resources.GetString("toolStripComboBox1.Items"),
-            resources.GetString("toolStripComboBox1.Items1"),
-            resources.GetString("toolStripComboBox1.Items2"),
-            resources.GetString("toolStripComboBox1.Items3"),
-            resources.GetString("toolStripComboBox1.Items4")});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             resources.ApplyResources(this.toolStripComboBox1, "toolStripComboBox1");
+            // 
+            // toolBtn_Test
+            // 
+            this.toolBtn_Test.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.toolBtn_Test, "toolBtn_Test");
+            this.toolBtn_Test.Name = "toolBtn_Test";
+            this.toolBtn_Test.Tag = "";
+            this.toolBtn_Test.Click += new System.EventHandler(this.toolBtn_Test_Click);
             // 
             // tabControl_Main
             // 
@@ -1112,5 +1118,6 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripButton toolBtn_Test;
     }
 }

@@ -24,21 +24,21 @@ namespace IIDA.View
             
             InitializeComponent();
 
-            /*
+            
+
             foreach (var language in Language.Load())
             {
-                comboBox2.Items.Add(language);
+                toolStripComboBox1.Items.Add(language);
             }
-            comboBox2.SelectedIndex = 0;
-            */
-        }
 
-        /*
+            //toolStripComboBox1.SelectedIndex = 0;
+            
+        }
+        
         private Language getSelectedLanguage()
         {
             return (Language)comboBox2.SelectedItem;
         }
-        */
 
         public string SomeText
         {
@@ -65,7 +65,7 @@ namespace IIDA.View
 
         private void MainMenu_Exit_Click(object sender, EventArgs e) => Application.Exit();
 
-        private void MainMenu_Web_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://vtd-pb.ru/");        
+        private void MainMenu_Web_Click(object sender, EventArgs e) => MessageBox.Show("Вэбсайт проекта недоступен!", "Вэбсайт", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         // Открыть новое окно во вкладке TabControl
         private void OpenTabWindow(Form newForm)
@@ -139,12 +139,16 @@ namespace IIDA.View
         private void button1_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Visible = !tableLayoutPanel1.Visible;
-            button1.Text = tableLayoutPanel1.Visible ? "Скрыть нижнюю панель" : "Показать нижнюю панель";
 
+            button1.Text = tableLayoutPanel1.Visible ? "Скрыть нижнюю панель" : "Показать нижнюю панель";
             tableLayoutPanel5.RowStyles[0].Height = tableLayoutPanel1.Visible ? 35 : 100;
             tableLayoutPanel5.RowStyles[2].Height = tableLayoutPanel1.Visible ? 65 : 0;
         }
+                
+        private void toolBtn_Test_Click(object sender, EventArgs e)
+        {
 
-        
+        }
+
     }
 }

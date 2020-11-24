@@ -6,6 +6,11 @@ using System.Xml.Serialization;
 
 namespace IIDA.View
 {
+	/*
+	 * Ссылка на оригинальную статью
+	 * https://habr.com/ru/post/323102/
+	 */
+
 	[XmlType]
 	public class Language
 	{

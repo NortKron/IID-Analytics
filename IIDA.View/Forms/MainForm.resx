@@ -193,20 +193,23 @@
   <data name="MainMenu_Windows.Text" xml:space="preserve">
     <value>Окна</value>
   </data>
+  <data name="MainMenu_GetHelp.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>F1</value>
+  </data>
   <data name="MainMenu_GetHelp.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>172, 24</value>
+    <value>196, 24</value>
   </data>
   <data name="MainMenu_GetHelp.Text" xml:space="preserve">
     <value>Вызов справки</value>
   </data>
   <data name="MainMenu_Web.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>172, 24</value>
+    <value>196, 24</value>
   </data>
   <data name="MainMenu_Web.Text" xml:space="preserve">
     <value>Вебсайт</value>
   </data>
   <data name="MainMenu_About.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>172, 24</value>
+    <value>196, 24</value>
   </data>
   <data name="MainMenu_About.Text" xml:space="preserve">
     <value>О программе</value>
@@ -367,26 +370,31 @@
   <data name="toolStripButton6.Text" xml:space="preserve">
     <value>toolStripButton6</value>
   </data>
-  <data name="toolStripComboBox1.Items" xml:space="preserve">
-    <value>Элемент списка 1</value>
-  </data>
-  <data name="toolStripComboBox1.Items1" xml:space="preserve">
-    <value>Элемент списка 2</value>
-  </data>
-  <data name="toolStripComboBox1.Items2" xml:space="preserve">
-    <value>Элемент списка 3</value>
-  </data>
-  <data name="toolStripComboBox1.Items3" xml:space="preserve">
-    <value>Элемент списка 4</value>
-  </data>
-  <data name="toolStripComboBox1.Items4" xml:space="preserve">
-    <value>Элемент списка 5</value>
-  </data>
   <data name="toolStripComboBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>140, 27</value>
   </data>
   <data name="toolStripComboBox1.Text" xml:space="preserve">
-    <value>Список элеметов</value>
+    <value>Выбрать язык</value>
+  </data>
+  <data name="toolBtn_Test.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhL3ZG9DsFQHMXvczDZvIOtXsHObuhqkViI3Quw
+        6CYmNoMYJJ0NBiFFIoIytOuf0+TeXP3yde+iyS+3OcP53Z4y3/dJJ4HAsiwyTVMp6BQCBIZhKAWdEcHV
+        vSlBmeB82NFy1KLluEWOPRC5MoHdMWhazwi4RJlALgf4EuT6BI+5kCsTrGddUY658E+QvyXYHq9UnRyC
+        U87f4aUApcXhnrI9Jzg/laQKFntXlHM+lSQK5psL5fvbp/JvJLGCQqmSWM5JkiCT84igXGtSrruKLQ0T
+        luAdmZxHBG37FFuWBC/j5XKOmX8WAH7rcI6ZMffPgjQwN2bXJgDo/COBTpjneQ2dML0PY3cISreGe8HM
+        qgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolBtn_Test.ImageTransparentColor" type="System.Drawing.Color, System.Drawing.Primitives">
+    <value>Magenta</value>
+  </data>
+  <data name="toolBtn_Test.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>24, 24</value>
+  </data>
+  <data name="toolBtn_Test.Text" xml:space="preserve">
+    <value>Click me</value>
   </data>
   <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 27</value>
@@ -398,7 +406,7 @@
     <value>6</value>
   </data>
   <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
+    <value>Click Me</value>
   </data>
   <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
     <value>toolStrip1</value>
@@ -415,6 +423,9 @@
   <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
   </data>
+  <data name="tableLayoutPanel1.AutoScroll" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
   </data>
@@ -426,10 +437,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox27.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 103</value>
+    <value>267, 103</value>
   </data>
   <data name="textBox27.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox27.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>28</value>
@@ -450,10 +461,10 @@
     <value>Left, Right</value>
   </data>
   <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 223</value>
+    <value>267, 223</value>
   </data>
   <data name="comboBox4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="comboBox4.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>34</value>
@@ -483,7 +494,7 @@
     <value>3, 388</value>
   </data>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label39.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>33</value>
@@ -510,10 +521,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox17.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 323</value>
+    <value>267, 323</value>
   </data>
   <data name="textBox17.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox17.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>39</value>
@@ -534,10 +545,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox18.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 203</value>
+    <value>267, 203</value>
   </data>
   <data name="textBox18.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox18.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>33</value>
@@ -567,7 +578,7 @@
     <value>3, 360</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>32</value>
@@ -594,10 +605,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox19.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 3</value>
+    <value>267, 3</value>
   </data>
   <data name="textBox19.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox19.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>23</value>
@@ -618,10 +629,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox20.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 63</value>
+    <value>267, 63</value>
   </data>
   <data name="textBox20.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox20.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>26</value>
@@ -642,10 +653,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox21.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 43</value>
+    <value>267, 43</value>
   </data>
   <data name="textBox21.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox21.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>25</value>
@@ -666,10 +677,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox22.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 23</value>
+    <value>267, 23</value>
   </data>
   <data name="textBox22.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox22.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>24</value>
@@ -699,7 +710,7 @@
     <value>3, 20</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label21.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>8</value>
@@ -735,7 +746,7 @@
     <value>3, 0</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label22.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -771,7 +782,7 @@
     <value>3, 40</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label23.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>9</value>
@@ -807,7 +818,7 @@
     <value>3, 60</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label24.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>10</value>
@@ -843,7 +854,7 @@
     <value>3, 80</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label25.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>11</value>
@@ -870,10 +881,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox23.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 83</value>
+    <value>267, 83</value>
   </data>
   <data name="textBox23.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox23.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>27</value>
@@ -903,7 +914,7 @@
     <value>3, 100</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>19</value>
@@ -939,7 +950,7 @@
     <value>3, 120</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label27.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>20</value>
@@ -975,7 +986,7 @@
     <value>3, 140</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label28.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>21</value>
@@ -1011,7 +1022,7 @@
     <value>3, 340</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label29.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>22</value>
@@ -1047,7 +1058,7 @@
     <value>3, 320</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label30.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>23</value>
@@ -1083,7 +1094,7 @@
     <value>3, 300</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label31.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>24</value>
@@ -1119,7 +1130,7 @@
     <value>3, 280</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label32.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>25</value>
@@ -1155,7 +1166,7 @@
     <value>3, 260</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label33.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>26</value>
@@ -1191,7 +1202,7 @@
     <value>3, 240</value>
   </data>
   <data name="label34.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label34.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>27</value>
@@ -1227,7 +1238,7 @@
     <value>3, 220</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label35.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>28</value>
@@ -1263,7 +1274,7 @@
     <value>3, 200</value>
   </data>
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label36.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>29</value>
@@ -1299,7 +1310,7 @@
     <value>3, 180</value>
   </data>
   <data name="label37.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label37.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>30</value>
@@ -1335,7 +1346,7 @@
     <value>3, 160</value>
   </data>
   <data name="label38.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>258, 19</value>
   </data>
   <data name="label38.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>31</value>
@@ -1362,10 +1373,10 @@
     <value>Left, Right</value>
   </data>
   <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 163</value>
+    <value>267, 163</value>
   </data>
   <data name="comboBox6.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="comboBox6.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>31</value>
@@ -1386,10 +1397,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox24.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 123</value>
+    <value>267, 123</value>
   </data>
   <data name="textBox24.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox24.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>29</value>
@@ -1410,10 +1421,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox25.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 143</value>
+    <value>267, 143</value>
   </data>
   <data name="textBox25.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox25.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>30</value>
@@ -1434,10 +1445,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox26.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 183</value>
+    <value>267, 183</value>
   </data>
   <data name="textBox26.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox26.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>32</value>
@@ -1458,10 +1469,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox28.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 243</value>
+    <value>267, 243</value>
   </data>
   <data name="textBox28.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox28.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>35</value>
@@ -1482,10 +1493,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox29.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 263</value>
+    <value>267, 263</value>
   </data>
   <data name="textBox29.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox29.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>36</value>
@@ -1506,10 +1517,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox30.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 283</value>
+    <value>267, 283</value>
   </data>
   <data name="textBox30.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox30.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>37</value>
@@ -1530,10 +1541,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox31.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 303</value>
+    <value>267, 303</value>
   </data>
   <data name="textBox31.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox31.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>38</value>
@@ -1554,10 +1565,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox32.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 343</value>
+    <value>267, 343</value>
   </data>
   <data name="textBox32.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox32.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>40</value>
@@ -1578,10 +1589,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox33.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 385</value>
+    <value>267, 385</value>
   </data>
   <data name="textBox33.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox33.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>42</value>
@@ -1605,7 +1616,7 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>539, 383</value>
+    <value>531, 383</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>25, 30</value>
@@ -1632,10 +1643,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox34.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 363</value>
+    <value>267, 363</value>
   </data>
   <data name="textBox34.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>258, 25</value>
   </data>
   <data name="textBox34.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>41</value>
@@ -1662,7 +1673,7 @@
     <value>20</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>567, 416</value>
+    <value>559, 416</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -1686,10 +1697,10 @@
     <value>Fill</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>582, 3</value>
+    <value>573, 3</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>573, 440</value>
+    <value>565, 440</value>
   </data>
   <data name="groupBox4.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -1716,10 +1727,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox15.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 339</value>
+    <value>266, 339</value>
   </data>
   <data name="textBox15.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox15.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>20</value>
@@ -1740,10 +1751,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 213</value>
+    <value>266, 213</value>
   </data>
   <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox9.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>14</value>
@@ -1773,7 +1784,7 @@
     <value>3, 387</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label19.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>32</value>
@@ -1800,10 +1811,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 3</value>
+    <value>266, 3</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
@@ -1824,10 +1835,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 66</value>
+    <value>266, 66</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox5.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
@@ -1848,10 +1859,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 45</value>
+    <value>266, 45</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox4.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>5</value>
@@ -1872,10 +1883,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 24</value>
+    <value>266, 24</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox3.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
@@ -1905,7 +1916,7 @@
     <value>3, 22</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>8</value>
@@ -1941,7 +1952,7 @@
     <value>3, 1</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -1977,7 +1988,7 @@
     <value>3, 43</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>9</value>
@@ -2013,7 +2024,7 @@
     <value>3, 64</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>10</value>
@@ -2049,7 +2060,7 @@
     <value>3, 85</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>11</value>
@@ -2079,10 +2090,10 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>539, 3</value>
+    <value>529, 3</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>25, 15</value>
+    <value>26, 15</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
@@ -2106,10 +2117,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 87</value>
+    <value>266, 87</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>7</value>
@@ -2139,7 +2150,7 @@
     <value>3, 106</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>19</value>
@@ -2175,7 +2186,7 @@
     <value>3, 127</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>20</value>
@@ -2211,7 +2222,7 @@
     <value>3, 148</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>21</value>
@@ -2247,7 +2258,7 @@
     <value>3, 358</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>22</value>
@@ -2283,7 +2294,7 @@
     <value>3, 337</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>23</value>
@@ -2319,7 +2330,7 @@
     <value>3, 316</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>24</value>
@@ -2355,7 +2366,7 @@
     <value>3, 295</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>25</value>
@@ -2391,7 +2402,7 @@
     <value>3, 274</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>26</value>
@@ -2427,7 +2438,7 @@
     <value>3, 253</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>27</value>
@@ -2463,7 +2474,7 @@
     <value>3, 232</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>28</value>
@@ -2499,7 +2510,7 @@
     <value>3, 211</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>29</value>
@@ -2535,7 +2546,7 @@
     <value>3, 190</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>30</value>
@@ -2571,7 +2582,7 @@
     <value>3, 169</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 19</value>
+    <value>257, 19</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>31</value>
@@ -2598,10 +2609,10 @@
     <value>Left, Right</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 384</value>
+    <value>266, 385</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>22</value>
@@ -2622,10 +2633,10 @@
     <value>Left, Right</value>
   </data>
   <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 108</value>
+    <value>266, 108</value>
   </data>
   <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="comboBox2.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>8</value>
@@ -2646,10 +2657,10 @@
     <value>Left, Right</value>
   </data>
   <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 171</value>
+    <value>266, 171</value>
   </data>
   <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="comboBox3.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>11</value>
@@ -2670,10 +2681,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 129</value>
+    <value>266, 129</value>
   </data>
   <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox6.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>9</value>
@@ -2694,10 +2705,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 150</value>
+    <value>266, 150</value>
   </data>
   <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox7.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>10</value>
@@ -2718,10 +2729,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 192</value>
+    <value>266, 192</value>
   </data>
   <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox8.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>13</value>
@@ -2745,10 +2756,10 @@
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>539, 171</value>
+    <value>529, 171</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>25, 15</value>
+    <value>26, 15</value>
   </data>
   <data name="button3.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
@@ -2772,10 +2783,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 234</value>
+    <value>266, 234</value>
   </data>
   <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox10.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>15</value>
@@ -2796,10 +2807,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 255</value>
+    <value>266, 255</value>
   </data>
   <data name="textBox11.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox11.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>16</value>
@@ -2820,10 +2831,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 276</value>
+    <value>266, 276</value>
   </data>
   <data name="textBox12.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox12.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>17</value>
@@ -2844,10 +2855,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox13.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 297</value>
+    <value>266, 297</value>
   </data>
   <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox13.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>18</value>
@@ -2868,10 +2879,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox14.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 318</value>
+    <value>266, 318</value>
   </data>
   <data name="textBox14.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox14.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>19</value>
@@ -2892,10 +2903,10 @@
     <value>Left, Right</value>
   </data>
   <data name="textBox16.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>271, 360</value>
+    <value>266, 360</value>
   </data>
   <data name="textBox16.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>262, 25</value>
+    <value>257, 25</value>
   </data>
   <data name="textBox16.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>21</value>
@@ -2922,7 +2933,7 @@
     <value>19</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>567, 416</value>
+    <value>558, 416</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -2940,7 +2951,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox15" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox9" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="18" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox4" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox3" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="textBox2" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="17" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox1" Row="18" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox2" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox3" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox6" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox7" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox8" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="textBox10" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox11" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox12" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox13" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox14" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox16" Row="17" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50,Absolute,31" /&gt;&lt;Rows Styles="Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158,Percent,5,263158" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox15" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox9" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="18" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox4" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox3" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="textBox2" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="17" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox1" Row="18" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox2" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox3" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox6" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox7" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox8" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="textBox10" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox11" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox12" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox13" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox14" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox16" Row="17" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50,Absolute,31" /&gt;&lt;Rows Styles="Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158,Percent,5.263158" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="groupBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2949,7 +2960,7 @@
     <value>3, 3</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>573, 440</value>
+    <value>564, 440</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -3205,6 +3216,9 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
     <value>7, 17</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>1180, 791</value>
@@ -3626,6 +3640,12 @@
   </data>
   <data name="&gt;&gt;toolStripComboBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBtn_Test.Name" xml:space="preserve">
+    <value>toolBtn_Test</value>
+  </data>
+  <data name="&gt;&gt;toolBtn_Test.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;languageBindingSource.Name" xml:space="preserve">
     <value>languageBindingSource</value>

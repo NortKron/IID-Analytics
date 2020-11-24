@@ -27,6 +27,9 @@ namespace IIDA.Presenter
             string str = _view.SomeText;
 
             _messageService.ShowMessage(str);
+
+            //Properties.Settings.Default.set1;
+
         }
     }
 }
