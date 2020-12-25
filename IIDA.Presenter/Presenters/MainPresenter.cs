@@ -24,12 +24,10 @@ namespace IIDA.Presenter
         
         void _view_eventClick(object sender, EventArgs e)
         {
-            string str = _view.SomeText;
+            string str = @"Test message";
 
             _messageService.ShowMessage(str);
-
             //Properties.Settings.Default.set1;
-
         }
     }
 }

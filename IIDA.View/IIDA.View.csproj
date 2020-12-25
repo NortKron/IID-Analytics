@@ -15,6 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IIDA.Model\IIDA.Model.csproj" />
     <ProjectReference Include="..\IIDA.Presenter\IIDA.Presenter.csproj" />
   </ItemGroup>
 

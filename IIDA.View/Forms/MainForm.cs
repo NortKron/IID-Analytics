@@ -18,23 +18,29 @@ namespace IIDA.View
 {
     public partial class MainForm : Form, IMainForm
     {
+        MessageService service;
+
         public MainForm()
         {
             // TODO: Установить соединение с базой данных
             
-            InitializeComponent();
-
-            
+            InitializeComponent();            
 
             foreach (var language in Language.Load())
             {
                 toolStripComboBox1.Items.Add(language);
             }
 
-            //toolStripComboBox1.SelectedIndex = 0;
-            
+            //toolStripComboBox1.SelectedIndex = 0;   
+
+            service = new MessageService();            
         }
-        
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private Language getSelectedLanguage()
         {
             return (Language)comboBox2.SelectedItem;
@@ -45,7 +51,12 @@ namespace IIDA.View
             get { return "Something text"; }
         }
 
+        #region Presenter Interface Methods
         public event EventHandler eventClick;
+
+        #endregion Presenter Interface Methods
+
+        #region Menu Events
 
         private void MainMenu_ProjectManager_Click(object sender, EventArgs e) => tabControl_Main.SelectedIndex = 0;
 
@@ -61,11 +72,18 @@ namespace IIDA.View
 
         private void MainMenu_Settings_Click(object sender, EventArgs e) => new Form_Settings().ShowDialog();
 
-        private void MainMenu_ManagerConnection_Click(object sender, EventArgs e) => new Form_ManagerConnections().ShowDialog();
+        private void MainMenu_ManagerConnection_Click(object sender, EventArgs e)
+        {
+            Form_ManagerConnections form = new Form_ManagerConnections();
+            ManagerConnections presenter = new ManagerConnections(form, service);
 
-        private void MainMenu_Exit_Click(object sender, EventArgs e) => Application.Exit();
+            form.ShowDialog();
+        }
 
         private void MainMenu_Web_Click(object sender, EventArgs e) => MessageBox.Show("Вэбсайт проекта недоступен!", "Вэбсайт", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        private void MainMenu_Exit_Click(object sender, EventArgs e) => Application.Exit();
+        #endregion Menu Events
 
         // Открыть новое окно во вкладке TabControl
         private void OpenTabWindow(Form newForm)
@@ -114,22 +132,7 @@ namespace IIDA.View
             toolStripStatusLabel1.Text = "change";
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            // TODO: Разоравать соединение с базой данных
-        }
-
-        private void button_OpenTF_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show(getSelectedLanguage().Messages.Text2);
-        }
-
-        private void comboBox2_SelectedValueChanged(object sender, EventArgs e)
+        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //var language = getSelectedLanguage();
             //languageBindingSource.DataSource = language;
@@ -144,11 +147,15 @@ namespace IIDA.View
             tableLayoutPanel5.RowStyles[0].Height = tableLayoutPanel1.Visible ? 35 : 100;
             tableLayoutPanel5.RowStyles[2].Height = tableLayoutPanel1.Visible ? 65 : 0;
         }
-                
+
         private void toolBtn_Test_Click(object sender, EventArgs e)
         {
-
+            eventClick(this, EventArgs.Empty);
         }
 
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // TODO: Разоравать соединение с базой данных
+        }
     }
 }

@@ -87,10 +87,10 @@
             this.radioButton_MDF.Location = new System.Drawing.Point(39, 26);
             this.radioButton_MDF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton_MDF.Name = "radioButton_MDF";
-            this.radioButton_MDF.Size = new System.Drawing.Size(156, 21);
+            this.radioButton_MDF.Size = new System.Drawing.Size(152, 21);
             this.radioButton_MDF.TabIndex = 0;
             this.radioButton_MDF.TabStop = true;
-            this.radioButton_MDF.Text = "SQL localDB ( *.MDF)";
+            this.radioButton_MDF.Text = "SQL localDB (*.MDF)";
             this.radioButton_MDF.UseVisualStyleBackColor = true;
             this.radioButton_MDF.CheckedChanged += new System.EventHandler(this.radioButtons_CheckedChanged);
             // 

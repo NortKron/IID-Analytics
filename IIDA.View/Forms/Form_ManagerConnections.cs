@@ -10,11 +10,33 @@ using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.Diagnostics;
 
+using IIDA.Presenter;
+
 namespace IIDA.View
 {
-    public partial class Form_ManagerConnections : Form
+    public partial class Form_ManagerConnections : Form, IManagerConnections
     {
         private OpenFileDialog openFileDialog1;
+
+        public string filePathMDF
+        {
+            get { return textBox1.Text; }
+            set { textBox2.Text = value; }
+        }
+
+        public string filePathACS
+        {
+            get { return textBox2.Text; }            
+            set { textBox2.Text = value; }
+        }
+        
+        public int FileDBFormat
+        {
+            get { return TabControl.SelectedIndex; }
+            set { TabControl.SelectedIndex = value; }
+        }
+        
+        public event EventHandler btnTestConnection;
 
         public Form_ManagerConnections()
         {
@@ -48,7 +70,7 @@ namespace IIDA.View
             }
 
             textBox1.Text = Properties.Settings.Default.PathFile_MDF;
-            textBox2.Text = Properties.Settings.Default.PathFile_ACS;
+            //textBox2.Text = Properties.Settings.Default.PathFile_ACS;
             TabControl.SelectedIndex = Properties.Settings.Default.FileDBFormat;
         }
 
@@ -64,7 +86,13 @@ namespace IIDA.View
 
         private void button_Test_Click(object sender, EventArgs e)
         {
-            if (!File.Exists(textBox1.Text))
+            string filePath = radioButton_MDF.Checked ? textBox1.Text : textBox2.Text;
+
+            //btnTestConnection(this, EventArgs.Empty);
+            //return;
+
+            /*
+            if (!File.Exists(filePath))
             {
                 MessageBox.Show("Не удаётся найти файл! Проверьте правильность пути файла", "Файл не найден", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -74,9 +102,9 @@ namespace IIDA.View
 
             if (radioButton_MDF.Checked)
             {
-                connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='" +
+                connectString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename='" +
                     textBox1.Text + 
-                    "';Integrated Security=True";
+                    "'; Integrated Security=True";
 
                 SqlConnection myConnection = new SqlConnection(connectString);
                 myConnection.Open();
@@ -86,8 +114,8 @@ namespace IIDA.View
             } 
             else
             {
-                connectString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source='" +
-                    textBox2.Text + "';";
+                connectString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = '" +
+                    textBox2.Text + "'";
 
                 OleDbConnection myConnection = new OleDbConnection(connectString);
                 myConnection.Open();
@@ -95,6 +123,7 @@ namespace IIDA.View
                 MessageBox.Show("Соединение с БД MS Access установлено!", "Соединение с БД", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 myConnection.Close();
             }
+            */
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)

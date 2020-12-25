@@ -137,7 +137,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -149,6 +148,7 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -373,6 +373,7 @@
             // 
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             resources.ApplyResources(this.toolStripComboBox1, "toolStripComboBox1");
+            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
             // 
             // toolBtn_Test
             // 
@@ -711,7 +712,6 @@
             this.tableLayoutPanel2.Controls.Add(this.label17, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.label18, 0, 8);
             this.tableLayoutPanel2.Controls.Add(this.comboBox1, 1, 18);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.comboBox3, 1, 8);
             this.tableLayoutPanel2.Controls.Add(this.textBox6, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.textBox7, 1, 7);
@@ -723,6 +723,7 @@
             this.tableLayoutPanel2.Controls.Add(this.textBox13, 1, 14);
             this.tableLayoutPanel2.Controls.Add(this.textBox14, 1, 15);
             this.tableLayoutPanel2.Controls.Add(this.textBox16, 1, 17);
+            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 1, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // textBox15
@@ -867,12 +868,6 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Name = "comboBox1";
             // 
-            // comboBox2
-            // 
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Name = "comboBox2";
-            // 
             // comboBox3
             // 
             resources.ApplyResources(this.comboBox3, "comboBox3");
@@ -929,6 +924,12 @@
             // 
             resources.ApplyResources(this.textBox16, "textBox16");
             this.textBox16.Name = "textBox16";
+            // 
+            // comboBox2
+            // 
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Name = "comboBox2";
             // 
             // dataGridView1
             // 
