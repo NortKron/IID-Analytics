@@ -12,6 +12,8 @@ namespace IIDA.Presenter
         string filePathACS { get; set; }        
         int FileDBFormat { get; set; }
 
+
         event EventHandler btnTestConnection;
+        event EventHandler btnSaveSettings;
     }
 }

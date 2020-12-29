@@ -66,6 +66,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Источник данных";
+            this.groupBox1.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.radioButtons_CheckedChanged);
             // 
             // radioButton_SQL
             // 
@@ -255,6 +256,7 @@
             this.button_Test.Text = "Test connection";
             this.button_Test.UseVisualStyleBackColor = true;
             this.button_Test.Click += new System.EventHandler(this.button_Test_Click);
+            //this.button_Test.Click += new System.EventHandler(this.btnTestConnection);
             // 
             // Form_ManagerConnections
             // 

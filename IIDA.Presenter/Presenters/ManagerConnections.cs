@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using System.Data.OleDb;
+using System.Data.SqlClient;
 
 namespace IIDA.Presenter
 {
     public class ManagerConnections
     {
-        // Form magagerConnections
+        // Form managerConnections
         private readonly IManagerConnections _view;
 
         // Вывод сообщений
@@ -20,54 +24,67 @@ namespace IIDA.Presenter
             _messageService = service;
             
             _view.btnTestConnection += new EventHandler(TestConnection);
+            _view.btnSaveSettings += new EventHandler(SaveSettings);
 
-            _view.filePathACS = Properties.Settings.Default.PathFile_ACS;            
             _view.filePathMDF = Properties.Settings.Default.PathFile_MDF;
+            _view.filePathACS = Properties.Settings.Default.PathFile_ACS;            
             _view.FileDBFormat = Properties.Settings.Default.FileDBFormat;
+        }
+
+        void SaveSettings(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.PathFile_MDF = _view.filePathMDF;
+            Properties.Settings.Default.PathFile_ACS = _view.filePathACS;
+            Properties.Settings.Default.FileDBFormat = _view.FileDBFormat;
+            Properties.Settings.Default.Save();
         }
 
         void TestConnection(object sender, EventArgs e)
         {
-            _messageService.ShowMessage(_view.filePathACS);
-
-            /*
-            string filePath = radioButton_MDF.Checked ? textBox1.Text : textBox2.Text;
+            //_messageService.ShowMessage(_view.filePathACS);
+                                   
+            string filePath = _view.FileDBFormat == 0 ? _view.filePathMDF : _view.filePathACS;
 
             if (!File.Exists(filePath))
             {
-                //MessageBox.Show("Не удаётся найти файл! Проверьте правильность пути файла", "Файл не найден", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 _messageService.ShowError("Не удаётся найти файл! Проверьте правильность пути файла");
                 return;
             }
 
             string connectString;
 
-            if (radioButton_MDF.Checked)
+            switch (_view.FileDBFormat)
             {
-                connectString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename='" +
-                    textBox1.Text +
-                    "'; Integrated Security=True";
+                case 0:
 
-                SqlConnection myConnection = new SqlConnection(connectString);
-                myConnection.Open();
+                    connectString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename='" +
+                        _view.filePathMDF + "'; Integrated Security=True";
 
-                //MessageBox.Show("Соединение с локальной базой данных установлено!", "Соединение с БД", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                _messageService.ShowMessage("Соединение с локальной базой данных установлено!");
-                myConnection.Close();
+                    SqlConnection myConnectionMDF = new SqlConnection(connectString);
+                    myConnectionMDF.Open();
+
+                    _messageService.ShowMessage("Соединение с локальной базой данных установлено!");
+                    myConnectionMDF.Close();
+
+                    break;
+
+                case 1:
+
+                    connectString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = '" +
+                        _view.filePathACS + "'";
+
+                    OleDbConnection myConnectionACS = new OleDbConnection(connectString);
+                    myConnectionACS.Open();
+
+                    _messageService.ShowMessage("Соединение с БД MS Access установлено!");
+                    myConnectionACS.Close();
+
+                    break;
+
+                case 2:                    
+                    // Test SQL Server connetction
+                    break;                
             }
-            else
-            {
-                connectString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = '" +
-                    textBox2.Text + "'";
-
-                OleDbConnection myConnection = new OleDbConnection(connectString);
-                myConnection.Open();
-
-                //MessageBox.Show("Соединение с БД MS Access установлено!", "Соединение с БД", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                _messageService.ShowMessage("Соединение с БД MS Access установлено!");
-                myConnection.Close();
-            }
-            */
         }
     }
 }

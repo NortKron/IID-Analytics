@@ -1,0 +1,12 @@
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\bin\Release\netcoreapp3.1\IIDA.Presenter.deps.json
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\bin\Release\netcoreapp3.1\IIDA.Presenter.dll
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\bin\Release\netcoreapp3.1\IIDA.Presenter.pdb
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\bin\Release\netcoreapp3.1\IIDA.Model.dll
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\bin\Release\netcoreapp3.1\IIDA.Model.pdb
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\obj\Release\netcoreapp3.1\IIDA.Presenter.csprojAssemblyReference.cache
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\obj\Release\netcoreapp3.1\IIDA.Presenter.AssemblyInfoInputs.cache
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\obj\Release\netcoreapp3.1\IIDA.Presenter.AssemblyInfo.cs
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\obj\Release\netcoreapp3.1\IIDA.Presenter.csproj.CoreCompileInputs.cache
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\obj\Release\netcoreapp3.1\IIDA.Presenter.csproj.CopyComplete
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\obj\Release\netcoreapp3.1\IIDA.Presenter.dll
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Presenter\obj\Release\netcoreapp3.1\IIDA.Presenter.pdb

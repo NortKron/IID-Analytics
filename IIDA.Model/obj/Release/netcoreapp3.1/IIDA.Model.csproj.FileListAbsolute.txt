@@ -1,0 +1,9 @@
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\bin\Release\netcoreapp3.1\IIDA.Model.deps.json
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\bin\Release\netcoreapp3.1\IIDA.Model.dll
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\bin\Release\netcoreapp3.1\IIDA.Model.pdb
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\Release\netcoreapp3.1\IIDA.Model.csprojAssemblyReference.cache
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\Release\netcoreapp3.1\IIDA.Model.AssemblyInfoInputs.cache
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\Release\netcoreapp3.1\IIDA.Model.AssemblyInfo.cs
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\Release\netcoreapp3.1\IIDA.Model.csproj.CoreCompileInputs.cache
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\Release\netcoreapp3.1\IIDA.Model.dll
+C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\Release\netcoreapp3.1\IIDA.Model.pdb
