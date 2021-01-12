@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IIDA.Presenter
 {
@@ -11,7 +7,6 @@ namespace IIDA.Presenter
         string filePathMDF { get; set; }
         string filePathACS { get; set; }        
         int FileDBFormat { get; set; }
-
 
         event EventHandler btnTestConnection;
         event EventHandler btnSaveSettings;

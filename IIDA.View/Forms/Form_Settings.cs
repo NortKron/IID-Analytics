@@ -17,9 +17,9 @@ namespace IIDA.View
             InitializeComponent();
         }
 
-        private void Form_Settings_KeyDown(object sender, KeyEventArgs e)
+        private void Form_Settings_KeyDown(object sender, KeyEventArgs args)
         {
-            switch (e.KeyCode)
+            switch (args.KeyCode)
             {
                 case Keys.Escape:
                     this.Close();

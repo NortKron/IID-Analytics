@@ -36,7 +36,7 @@ namespace IIDA.View
             service = new MessageService();            
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs args)
         {
 
         }
@@ -58,21 +58,21 @@ namespace IIDA.View
 
         #region Menu Events
 
-        private void MainMenu_ProjectManager_Click(object sender, EventArgs e) => tabControl_Main.SelectedIndex = 0;
+        private void MainMenu_ProjectManager_Click(object sender, EventArgs args) => tabControl_Main.SelectedIndex = 0;
 
-        private void MainMenu_Calcs_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Calcs());
+        private void MainMenu_Calcs_Click(object sender, EventArgs args) => OpenTabWindow(new Form_Calcs());
 
-        private void MainMenu_Map_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Map());
+        private void MainMenu_Map_Click(object sender, EventArgs args) => OpenTabWindow(new Form_Map());
 
-        private void MainMenu_Table_Click(object sender, EventArgs e) => OpenTabWindow(new Form_TableFeatures());
+        private void MainMenu_Table_Click(object sender, EventArgs args) => OpenTabWindow(new Form_TableFeatures());
         
-        private void MainMenu_Report_Click(object sender, EventArgs e) => OpenTabWindow(new Form_Reports());
+        private void MainMenu_Report_Click(object sender, EventArgs args) => OpenTabWindow(new Form_Reports());
 
-        private void MainMenu_About_Click(object sender, EventArgs e) => new Form_About().ShowDialog();
+        private void MainMenu_About_Click(object sender, EventArgs args) => new Form_About().ShowDialog();
 
-        private void MainMenu_Settings_Click(object sender, EventArgs e) => new Form_Settings().ShowDialog();
+        private void MainMenu_Settings_Click(object sender, EventArgs args) => new Form_Settings().ShowDialog();
 
-        private void MainMenu_ManagerConnection_Click(object sender, EventArgs e)
+        private void MainMenu_ManagerConnection_Click(object sender, EventArgs args)
         {
             Form_ManagerConnections form = new Form_ManagerConnections();
             ManagerConnections presenter = new ManagerConnections(form, service);
@@ -80,9 +80,9 @@ namespace IIDA.View
             form.ShowDialog();
         }
 
-        private void MainMenu_Web_Click(object sender, EventArgs e) => MessageBox.Show("Вэбсайт проекта недоступен!", "Вэбсайт", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        private void MainMenu_Web_Click(object sender, EventArgs args) => MessageBox.Show("Вэбсайт проекта недоступен!", "Вэбсайт", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-        private void MainMenu_Exit_Click(object sender, EventArgs e) => Application.Exit();
+        private void MainMenu_Exit_Click(object sender, EventArgs args) => Application.Exit();
         #endregion Menu Events
 
         // Открыть новое окно во вкладке TabControl
@@ -111,10 +111,10 @@ namespace IIDA.View
             tabControl_Main.SelectedIndex = tabControl_Main.TabPages.Count - 1;
         }
 
-        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        private void MainForm_KeyDown(object sender, KeyEventArgs args)
         {   
             // Сочетание клавиш Ctrl + W закрывает активную вкладку TabControl
-            if (e.Control && e.KeyCode == Keys.W)
+            if (args.Control && args.KeyCode == Keys.W)
             {
                 if (tabControl_Main.SelectedIndex != 0)
                 {
@@ -127,19 +127,19 @@ namespace IIDA.View
             }
         }
 
-        private void MainForm_SizeChanged(object sender, EventArgs e)
+        private void MainForm_SizeChanged(object sender, EventArgs args)
         {
             toolStripStatusLabel1.Text = "change";
         }
 
-        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs args)
         {
             //var language = getSelectedLanguage();
             //languageBindingSource.DataSource = language;
             //pictureBox1.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Languages", language.Image));
         }
         
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs args)
         {
             tableLayoutPanel1.Visible = !tableLayoutPanel1.Visible;
 
@@ -148,14 +148,14 @@ namespace IIDA.View
             tableLayoutPanel5.RowStyles[2].Height = tableLayoutPanel1.Visible ? 65 : 0;
         }
 
-        private void toolBtn_Test_Click(object sender, EventArgs e)
+        private void toolBtn_Test_Click(object sender, EventArgs args)
         {
             eventClick(this, EventArgs.Empty);
         }
 
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs args)
         {
-            // TODO: Разоравать соединение с базой данных
+            // TODO: Разорвать соединение с базой данных
         }
     }
 }

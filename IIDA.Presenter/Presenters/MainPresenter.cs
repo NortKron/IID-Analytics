@@ -22,7 +22,7 @@ namespace IIDA.Presenter
             _view.eventClick += new EventHandler(_view_eventClick);
         }
         
-        void _view_eventClick(object sender, EventArgs e)
+        void _view_eventClick(object sender, EventArgs args)
         {
             string str = @"Test message";
 

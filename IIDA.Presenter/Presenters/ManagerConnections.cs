@@ -31,7 +31,7 @@ namespace IIDA.Presenter
             _view.FileDBFormat = Properties.Settings.Default.FileDBFormat;
         }
 
-        void SaveSettings(object sender, EventArgs e)
+        void SaveSettings(object sender, EventArgs args)
         {
             Properties.Settings.Default.PathFile_MDF = _view.filePathMDF;
             Properties.Settings.Default.PathFile_ACS = _view.filePathACS;
@@ -39,7 +39,7 @@ namespace IIDA.Presenter
             Properties.Settings.Default.Save();
         }
 
-        void TestConnection(object sender, EventArgs e)
+        void TestConnection(object sender, EventArgs args)
         {
             //_messageService.ShowMessage(_view.filePathACS);
                                    
@@ -53,38 +53,48 @@ namespace IIDA.Presenter
 
             string connectString;
 
-            switch (_view.FileDBFormat)
+            try
             {
-                case 0:
+                switch (_view.FileDBFormat)
+                {
+                    case 0:
 
-                    connectString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename='" +
-                        _view.filePathMDF + "'; Integrated Security=True";
+                        connectString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename='" +
+                            _view.filePathMDF + "'; Integrated Security=True";
 
-                    SqlConnection myConnectionMDF = new SqlConnection(connectString);
-                    myConnectionMDF.Open();
+                        SqlConnection myConnectionMDF = new SqlConnection(connectString);
+                        myConnectionMDF.Open();
 
-                    _messageService.ShowMessage("Соединение с локальной базой данных установлено!");
-                    myConnectionMDF.Close();
+                        _messageService.ShowMessage("Соединение с локальной базой данных установлено!");
+                        myConnectionMDF.Close();
 
-                    break;
+                        break;
 
-                case 1:
+                    case 1:
 
-                    connectString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = '" +
-                        _view.filePathACS + "'";
+                        connectString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = '" +
+                            _view.filePathACS + "'";
 
-                    OleDbConnection myConnectionACS = new OleDbConnection(connectString);
-                    myConnectionACS.Open();
+                        OleDbConnection myConnectionACS = new OleDbConnection(connectString);
+                        myConnectionACS.Open();
 
-                    _messageService.ShowMessage("Соединение с БД MS Access установлено!");
-                    myConnectionACS.Close();
+                        _messageService.ShowMessage("Соединение с БД MS Access установлено!");
+                        myConnectionACS.Close();
 
-                    break;
+                        break;
 
-                case 2:                    
-                    // Test SQL Server connetction
-                    break;                
-            }
+                    case 2:
+                        // Test SQL Server connetction
+                        break;
+                }
+
+            } 
+            catch (IOException err)
+            {
+                _messageService.ShowMessage("Не удалось соединиться с Базой данных! \nПричина:\n\n"
+                    + "Message : " + err.Message
+                    + "\nSource : " + err.Source);
+            }            
         }
     }
 }

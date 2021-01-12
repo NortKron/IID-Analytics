@@ -14,7 +14,6 @@ namespace IIDA.View
         private const string PARAMETER_FILEFILTER_ACS = "Access files (*.accdb)|*.accdb";
         private const string PARAMETER_FILEFILTER_SQL = "";
 
-        private string PARAMETER_FILEFILTER_CURRENT = "";
         private OpenFileDialog openFileDialog1;        
 
         #region IManagerConnections methods
@@ -52,25 +51,26 @@ namespace IIDA.View
             };
         }
 
-        private void Form_ManagerConnections_Load(object sender, EventArgs e)
+        private void Form_ManagerConnections_Load(object sender, EventArgs args)
         {
             radioButton_MDF.Checked = (TabControl.SelectedIndex == 0);
             radioButton_ACS.Checked = (TabControl.SelectedIndex == 1);
-            radioButton_SQL.Checked = (TabControl.SelectedIndex == 2);            
+            radioButton_SQL.Checked = (TabControl.SelectedIndex == 2);
         }
 
-        private void button_OK_Click(object sender, EventArgs e)
+        private void button_OK_Click(object sender, EventArgs args)
         {
             btnSaveSettings(this, EventArgs.Empty);
             this.Close();
         }        
 
-        private void button_Test_Click(object sender, EventArgs e) => btnTestConnection(this, EventArgs.Empty);
-        private void button_Cancel_Click(object sender, EventArgs e) => this.Close();
+        private void button_Test_Click(object sender, EventArgs args) => btnTestConnection(this, EventArgs.Empty);
+        private void button_Cancel_Click(object sender, EventArgs args) => this.Close();
 
-        private void button_OpenDialog_Click(object sender, EventArgs e)
+        private void button_OpenDialog_Click(object sender, EventArgs args)
         {
-            openFileDialog1.Filter = PARAMETER_FILEFILTER_CURRENT;
+            openFileDialog1.Filter = (radioButton_MDF.Checked ? PARAMETER_FILEFILTER_MDF :
+                 radioButton_ACS.Checked ? PARAMETER_FILEFILTER_ACS : PARAMETER_FILEFILTER_SQL);
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -91,30 +91,16 @@ namespace IIDA.View
             }
         }
 
-        private void radioButtons_CheckedChanged(object sender, EventArgs e)
+        private void radioButtons_CheckedChanged(object sender, EventArgs args)
         {
-            if (radioButton_MDF.Checked)
-            {
-                TabControl.SelectedIndex = 0;
-                PARAMETER_FILEFILTER_CURRENT = PARAMETER_FILEFILTER_MDF;
-            }
-
-            if (radioButton_ACS.Checked)
-            {
-                TabControl.SelectedIndex = 1;
-                PARAMETER_FILEFILTER_CURRENT = PARAMETER_FILEFILTER_ACS;
-            }
-
-            if (radioButton_SQL.Checked)
-            {
-                TabControl.SelectedIndex = 2;
-                PARAMETER_FILEFILTER_CURRENT = PARAMETER_FILEFILTER_SQL;
-            }
+            if (radioButton_MDF.Checked) TabControl.SelectedIndex = 0;
+            if (radioButton_ACS.Checked) TabControl.SelectedIndex = 1;
+            if (radioButton_SQL.Checked) TabControl.SelectedIndex = 2;
         }
 
-        private void Form_ManagerConnections_KeyDown(object sender, KeyEventArgs e)
+        private void Form_ManagerConnections_KeyDown(object sender, KeyEventArgs args)
         {
-            if (e.KeyCode == Keys.Escape) this.Close();
+            if (args.KeyCode == Keys.Escape) this.Close();
         }       
     }
 }
