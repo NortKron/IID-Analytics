@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj": {}
+    "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj": {
+    "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj",
+        "projectUniqueName": "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj",
         "projectName": "IIDA.Model",
-        "projectPath": "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj",
-        "packagesPath": "C:\\Users\\NortKron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Model\\obj\\",
+        "projectPath": "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj",
+        "packagesPath": "C:\\Users\\sitnik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\NortKron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sitnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

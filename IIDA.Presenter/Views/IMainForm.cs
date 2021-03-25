@@ -7,7 +7,14 @@ namespace IIDA.Presenter
     // Интерфей для работы с Presenter
     public interface IMainForm
     {
-        string SomeText { get; }
-        event EventHandler eventClick;
+        // TODO: Этих полей здесь быть не должно!
+        string filePathMDF { get; set; }
+        string filePathACS { get; set; }
+        int FileDBFormat { get; set; }
+
+        event EventHandler initializeConnection;
+
+        bool LetInit();
+
     }
 }

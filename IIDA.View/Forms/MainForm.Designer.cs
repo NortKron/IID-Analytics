@@ -60,6 +60,7 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.toolBtn_Test = new System.Windows.Forms.ToolStripButton();
+            this.toolBtn_Test2 = new System.Windows.Forms.ToolStripButton();
             this.tabControl_Main = new System.Windows.Forms.TabControl();
             this.tabPage_Main = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -331,7 +332,8 @@
             this.toolStripButton5,
             this.toolStripButton6,
             this.toolStripComboBox1,
-            this.toolBtn_Test});
+            this.toolBtn_Test,
+            this.toolBtn_Test2});
             this.toolStrip1.Name = "toolStrip1";
             // 
             // toolStripButton2
@@ -382,6 +384,13 @@
             this.toolBtn_Test.Name = "toolBtn_Test";
             this.toolBtn_Test.Tag = "";
             this.toolBtn_Test.Click += new System.EventHandler(this.toolBtn_Test_Click);
+            // 
+            // toolBtn_Test2
+            // 
+            this.toolBtn_Test2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.toolBtn_Test2, "toolBtn_Test2");
+            this.toolBtn_Test2.Name = "toolBtn_Test2";
+            this.toolBtn_Test2.Click += new System.EventHandler(this.toolBtn_Test2_Click);
             // 
             // tabControl_Main
             // 
@@ -941,6 +950,7 @@
             // 
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
+            this.button1.Tag = "";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -960,6 +970,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Controls.Add(this.tabControl_Main);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
@@ -1120,5 +1131,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripButton toolBtn_Test;
+        private System.Windows.Forms.ToolStripButton toolBtn_Test2;
     }
 }

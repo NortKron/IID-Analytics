@@ -412,6 +412,7 @@
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -427,6 +428,7 @@
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -442,6 +444,7 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -891,23 +894,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NortKron\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\sitnik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.View\\IIDA.View.csproj",
+      "projectUniqueName": "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.View\\IIDA.View.csproj",
       "projectName": "IIDA.View",
-      "projectPath": "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.View\\IIDA.View.csproj",
-      "packagesPath": "C:\\Users\\NortKron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.View\\obj\\",
+      "projectPath": "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.View\\IIDA.View.csproj",
+      "packagesPath": "C:\\Users\\sitnik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.View\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\NortKron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sitnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -921,11 +920,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj": {
-              "projectPath": "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj"
+            "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj": {
+              "projectPath": "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Model\\IIDA.Model.csproj"
             },
-            "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Presenter\\IIDA.Presenter.csproj": {
-              "projectPath": "C:\\Users\\NortKron\\source\\repos\\NortKron\\IID-Analytics\\IIDA.Presenter\\IIDA.Presenter.csproj"
+            "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Presenter\\IIDA.Presenter.csproj": {
+              "projectPath": "C:\\Users\\sitnik\\source\\repos\\IID-Analytics\\IIDA.Presenter\\IIDA.Presenter.csproj"
             }
           }
         }
@@ -967,7 +966,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

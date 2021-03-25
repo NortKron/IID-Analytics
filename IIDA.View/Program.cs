@@ -20,12 +20,12 @@ namespace IIDA.View
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MainForm());
 
-            // TODO: Подключиться к БД?
+            // TODO: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ?
 
             // Init pattern parts
             MainForm form = new MainForm();
             MessageService service = new MessageService();
-            MainPresenter presenter = new MainPresenter(form, service);
+            MainPresenter presenter = new MainPresenter(form, service);            
 
             Application.Run(form);
         }

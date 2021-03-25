@@ -14,7 +14,7 @@ namespace IIDA.View
         private const string PARAMETER_FILEFILTER_ACS = "Access files (*.accdb)|*.accdb";
         private const string PARAMETER_FILEFILTER_SQL = "";
 
-        private OpenFileDialog openFileDialog1;        
+        private OpenFileDialog openFileDialog1;
 
         #region IManagerConnections methods
         public string filePathMDF
@@ -87,7 +87,7 @@ namespace IIDA.View
                 if (radioButton_SQL.Checked)
                 {
                     // Check SQL string connection
-                }                
+                }
             }
         }
 
