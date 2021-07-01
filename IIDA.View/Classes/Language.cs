@@ -7,8 +7,11 @@ using System.Xml.Serialization;
 namespace IIDA.View
 {
 	/*
+	 * Динамичяеская локализация приложения
+	 * 
 	 * Ссылка на оригинальную статью
 	 * https://habr.com/ru/post/323102/
+	 * 
 	 */
 
 	[XmlType]

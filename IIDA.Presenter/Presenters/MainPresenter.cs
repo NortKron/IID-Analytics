@@ -29,13 +29,11 @@ namespace IIDA.Presenter
             _view.filePathACS = Properties.Settings.Default.PathFile_ACS;
             _view.FileDBFormat = Properties.Settings.Default.FileDBFormat;
 
-
             dataReader = new ModelBase();
             dataReader.SetParameters(
                 Properties.Settings.Default.PathFile_MDF,
                 Properties.Settings.Default.PathFile_ACS,
                 Properties.Settings.Default.FileDBFormat);
-            
         }
 
         void _view_InitializeConnection(object sender, EventArgs args)
@@ -46,7 +44,7 @@ namespace IIDA.Presenter
             }
             else
             {
-                _messageService.ShowExclamation("Invalid parameters connection!");                 
+                _messageService.ShowExclamation("Invalid parameters connection!");
             }            
         }
     }

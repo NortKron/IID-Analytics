@@ -3,6 +3,8 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 
+using System.Diagnostics;
+
 namespace IIDA.Model
 {
     public class ModelBase
@@ -22,7 +24,7 @@ namespace IIDA.Model
             // Все параметры по-умолчанию пустые
             listParameters = new List<string> { "", "", "" };
         }
-        
+
         public void SetParameters(string filePathMDF, string filePathACS, int FileDBFormat)
         {
             listParameters[0] = filePathMDF;
@@ -34,12 +36,10 @@ namespace IIDA.Model
 
         public void InitConnection()
         {
-            //connectString = String.Format(@"Provider=Microsoft.ACE.OLEDB.12.0; Data Source='{0}';", filePathACS);
-
             switch (FileDBFormat)
             {
                 case 0:
-                    //accessor = new DataAccessorMDF();
+                    accessor = new DataAccessorMDF();
                     break;
 
                 case 1:
@@ -55,15 +55,15 @@ namespace IIDA.Model
             }
         }
 
-        public void TestConnection()
+        public string TestConnection()
         {
-            //accessor.TestConnection();
+            //Debug.Print(">> " + listParameters.ElementAt(FileDBFormat));
+            return accessor.TestConnection(accessor.GetConnectionString(listParameters.ElementAt(FileDBFormat)));
         }
 
         public bool IsValidParameters() =>
             listParameters.ElementAt(FileDBFormat).Length > 0 && File.Exists(listParameters.ElementAt(FileDBFormat));
 
         public void CloseConnection() => accessor.CloseConnection();
-        
     }
 }

@@ -51,6 +51,7 @@ namespace IIDA.View
             };
         }
 
+
         private void Form_ManagerConnections_Load(object sender, EventArgs args)
         {
             radioButton_MDF.Checked = (TabControl.SelectedIndex == 0);
@@ -62,7 +63,7 @@ namespace IIDA.View
         {
             btnSaveSettings(this, EventArgs.Empty);
             this.Close();
-        }        
+        }
 
         private void button_Test_Click(object sender, EventArgs args) => btnTestConnection(this, EventArgs.Empty);
         private void button_Cancel_Click(object sender, EventArgs args) => this.Close();
