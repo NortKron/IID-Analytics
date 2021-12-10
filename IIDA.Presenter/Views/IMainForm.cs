@@ -18,7 +18,7 @@ namespace IIDA.Presenter
 
         event EventHandler initializeConnection;
 
-        bool LetInit();
+        //bool LetInit();
 
     }
 }

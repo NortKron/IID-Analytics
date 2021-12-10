@@ -5,9 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Data.OleDb;
-using System.Data.SqlClient;
-
 using IIDA.Model;
 
 namespace IIDA.Presenter
@@ -26,7 +23,7 @@ namespace IIDA.Presenter
         {
             _view = view;
             _messageService = service;
-            
+
             _view.btnTestConnection += new EventHandler(TestConnection);
             _view.btnSaveSettings += new EventHandler(SaveSettings);
 
@@ -45,81 +42,26 @@ namespace IIDA.Presenter
 
         void TestConnection(object sender, EventArgs args)
         {
-            //_messageService.ShowMessage(_view.filePathACS);
-                                   
             string filePath = _view.FileDBFormat == 0 ? _view.filePathMDF : _view.filePathACS;
-            /*
-            if (!File.Exists(filePath))
-            {
-                _messageService.ShowError("Не удаётся найти файл: /n"
-                    + filePath + "\n\n"
-                    + "Проверьте правильность пути файла");
-                return;
-            }
-            */
+
             dataModel = new ModelBase();
+            dataModel.InitConnection();
 
             dataModel.SetParameters(
-                Properties.Settings.Default.PathFile_MDF,
-                Properties.Settings.Default.PathFile_ACS,
-                Properties.Settings.Default.FileDBFormat);
+                _view.filePathMDF,
+                _view.filePathACS,
+                _view.FileDBFormat);
 
-            if (dataModel.IsValidParameters())
+            if (!dataModel.IsValidParameters())
             {
-                _messageService.ShowError("Не удаётся найти файл: /n"
+                _messageService.ShowError("Не удаётся найти файл: \n"
                     + filePath + "\n\n"
                     + "Проверьте правильность пути файла");
                 return;
             }
 
-            dataModel.TestConnection();
-
+            _messageService.ShowMessage(dataModel.TestConnection());
             dataModel.CloseConnection();
-
-            string connectString;
-
-            try
-            {
-                switch (_view.FileDBFormat)
-                {
-                    case 0:
-
-                        connectString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename='" +
-                            _view.filePathMDF + "'; Integrated Security=True";
-
-                        SqlConnection myConnectionMDF = new(connectString);
-                        myConnectionMDF.Open();
-
-                        _messageService.ShowMessage("Соединение с локальной базой данных установлено!");
-                        myConnectionMDF.Close();
-
-                        break;
-
-                    case 1:
-                        
-                        connectString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = '" +
-                            _view.filePathACS + "'";
-
-                        OleDbConnection myConnectionACS = new(connectString);
-                        myConnectionACS.Open();
-
-                        _messageService.ShowMessage("Соединение с БД MS Access установлено!");
-                        myConnectionACS.Close();
-
-                        break;
-
-                    case 2:
-                        // Test SQL Server connetction
-                        break;
-                }
-
-            } 
-            catch (IOException err)
-            {
-                _messageService.ShowMessage("Не удалось соединиться с Базой данных! \nПричина:\n\n"
-                    + "Message : " + err.Message
-                    + "\nSource : " + err.Source);
-            }            
         }
     }
 }

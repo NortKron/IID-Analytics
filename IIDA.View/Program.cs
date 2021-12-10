@@ -20,8 +20,6 @@ namespace IIDA.View
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MainForm());
 
-            // TODO: ������������ � ��?
-
             // Init pattern parts
             MainForm form = new();
             MessageService service = new();

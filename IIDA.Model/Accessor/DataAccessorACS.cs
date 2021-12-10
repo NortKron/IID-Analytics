@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 using System.Data.OleDb;
 
@@ -20,14 +21,21 @@ namespace IIDA.Model
             myConnection.Open();
         }
 
-        public override void TestConnection(string connectString)
+        public override string TestConnection(string connectString)
         {
-            myConnection = new OleDbConnection(connectString);
-            myConnection.Open();
+            try
+            {
+                myConnection = new OleDbConnection(connectString);
+                myConnection.Open();
+                // TODO : Get something data
+                myConnection.Close();
+            }
+            catch (Exception err)
+            {
+                return "Connection failed \nErr: " + err.Message;
+            }
 
-            // TODO : Get something data
-
-            myConnection.Close();
+            return "Connection is good";
         }
 
         public override void CloseConnection()
@@ -40,5 +48,9 @@ namespace IIDA.Model
 
         }
 
+        public override string GetConnectionString(string filePath)
+        {
+            return String.Format(@"Provider=Microsoft.ACE.OLEDB.12.0; Data Source='{0}';", filePath);
+        }
     }
 }
