@@ -22,3 +22,16 @@ C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\x64\Debug\net
 C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.dll
 C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\ref\IIDA.Model.dll
 C:\Users\sitnik\source\repos\NortKron\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.pdb
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\bin\x64\Debug\net5.0\IIDA.Model.deps.json
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\bin\x64\Debug\net5.0\IIDA.Model.dll
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\bin\x64\Debug\net5.0\ref\IIDA.Model.dll
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\bin\x64\Debug\net5.0\IIDA.Model.pdb
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.csproj.AssemblyReference.cache
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.AssemblyInfoInputs.cache
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.AssemblyInfo.cs
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.csproj.CoreCompileInputs.cache
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.dll
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\ref\IIDA.Model.dll
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\obj\x64\Debug\net5.0\IIDA.Model.pdb
+C:\Users\AS263\source\repos\IID-Analytics\IIDA.Model\bin\x64\Debug\net5.0\IIDA.Model.xml
