@@ -39,14 +39,12 @@ namespace IIDA.View
 
             //toolStripComboBox1.SelectedIndex = 0;   
 
-            service = new MessageService();            
+            service = new MessageService();
         }
 
         private void MainForm_Load(object sender, EventArgs args)
         {
             initializeConnection(this, EventArgs.Empty);
-
-
         }
 
         private Language getSelectedLanguage()
@@ -85,8 +83,8 @@ namespace IIDA.View
 
         private void MainMenu_ManagerConnection_Click(object sender, EventArgs args)
         {
-            Form_ManagerConnections form = new Form_ManagerConnections();
-            ManagerConnections presenter = new ManagerConnections(form, service);
+            Form_ManagerConnections form = new();
+            ManagerConnections presenter = new(form, service);
 
             form.ShowDialog();
         }
@@ -108,7 +106,7 @@ namespace IIDA.View
                 }
             }
 
-            TabPage newTabPage = new TabPage();
+            TabPage newTabPage = new();
 
             newForm.TopLevel = false;
             newForm.Visible = true;
@@ -274,7 +272,7 @@ namespace IIDA.View
                     + filePathACS
                     + "';";
 
-                OleDbConnection myConnection = new OleDbConnection(connectString);
+                OleDbConnection myConnection = new(connectString);
                 //await myConnection.OpenAsync();
                 myConnection.Open();
 
@@ -284,7 +282,7 @@ namespace IIDA.View
                 //string query = "SELECT * FROM Menedzher_proektov"; // Tablitca_osobennostei";
 
                 // создаем объект OleDbCommand для выполнения запроса к БД MS Access
-                OleDbCommand command = new OleDbCommand(query, myConnection);
+                OleDbCommand command = new(query, myConnection);
 
                 // получаем объект OleDbDataReader для чтения табличного результата запроса SELECT
                 OleDbDataReader reader = command.ExecuteReader();
@@ -292,7 +290,7 @@ namespace IIDA.View
                 Debug.Print("Start head");
 
                 //DataGridViewTextBoxColumn[] header = new DataGridViewTextBoxColumn[]{ };
-                List<DataGridViewTextBoxColumn> header = new List<DataGridViewTextBoxColumn>();
+                List<DataGridViewTextBoxColumn> header = new();
 
                 // Заполнение заголовков
                 for (int i = 0; i < reader.FieldCount; i++)
@@ -315,7 +313,7 @@ namespace IIDA.View
                 }
 
                 object[] obj;
-                List<object[]> data = new List<object[]>();
+                List<object[]> data = new();
                 int num;
 
                 Debug.Print("Start row");
@@ -363,6 +361,5 @@ namespace IIDA.View
         {
             // TODO: Разорвать соединение с базой данных
         }
-
     }
 }

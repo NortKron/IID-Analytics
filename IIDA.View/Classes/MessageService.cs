@@ -11,8 +11,11 @@ namespace IIDA.View
 {    
     public class MessageService : IMessageService
     {
+        /*
+         * Здесь комментарий номер 1
+         */
         public void ShowMessage(string message)
-        {
+        {            
             MessageBox.Show(message, "Заголовок информационного сообщения", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

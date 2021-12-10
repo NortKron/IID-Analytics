@@ -23,9 +23,9 @@ namespace IIDA.View
             // TODO: ������������ � ��?
 
             // Init pattern parts
-            MainForm form = new MainForm();
-            MessageService service = new MessageService();
-            MainPresenter presenter = new MainPresenter(form, service);            
+            MainForm form = new();
+            MessageService service = new();
+            MainPresenter presenter = new(form, service);
 
             Application.Run(form);
         }

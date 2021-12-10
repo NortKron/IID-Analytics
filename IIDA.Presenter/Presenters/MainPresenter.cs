@@ -8,6 +8,9 @@ using IIDA.Model;
 
 namespace IIDA.Presenter
 {
+    /*
+    * Здесь комментарий номер 3
+    */
     public class MainPresenter
     {
         // Main form
@@ -16,7 +19,7 @@ namespace IIDA.Presenter
         // Вывод сообщений
         private readonly IMessageService _messageService;
 
-        ModelBase dataReader;
+        private ModelBase dataReader;
 
         public MainPresenter(IMainForm view, IMessageService service)
         {

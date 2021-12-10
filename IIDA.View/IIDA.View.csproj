@@ -12,6 +12,11 @@
     <PackageIcon>IIDA.png</PackageIcon>
     <Copyright>R</Copyright>
     <ApplicationIcon>Resources\IIDA.ico</ApplicationIcon>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DocumentationFile>IIDA.View.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -65,7 +70,7 @@
 
   <ItemGroup>
     <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
 </Project>

@@ -5,6 +5,10 @@ using System.Text;
 namespace IIDA.Presenter
 {
     // Интерфей для работы с Presenter
+
+    /*
+    * Здесь комментарий номер 2
+    */
     public interface IMainForm
     {
         // TODO: Этих полей здесь быть не должно!
